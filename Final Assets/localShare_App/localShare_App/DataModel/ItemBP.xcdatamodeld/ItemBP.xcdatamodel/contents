@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21279" systemVersion="21G72" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="ItemBP" representedClassName="ItemBP" syncable="YES" codeGenerationType="class">
+        <attribute name="expireDate" optional="YES" attributeType="Date" defaultDateTimeInterval="724133580" usesScalarValueType="NO"/>
+        <attribute name="glutenFree" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="halal" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
+        <attribute name="itemName" optional="YES" attributeType="String"/>
+        <attribute name="nonFat" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="vegan" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+    </entity>
+</model>
