@@ -58,7 +58,7 @@ struct ListsView: View {
         })
     }
         
-    func delete(indices: IndexSet, @State var listToChange: Array<String>){
+    func delete(indices: IndexSet, @State `var` listToChange: Array<String>){
             listToChange.remove(atOffsets: indices)
             
         }

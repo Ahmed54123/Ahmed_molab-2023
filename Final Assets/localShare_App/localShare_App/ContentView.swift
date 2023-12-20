@@ -10,26 +10,24 @@ import CoreData
 
 struct ContentView: View {
     
-    // @Environment (\.managedObjectContext) var managedObjectContext
-    // @FetchRequest var item: FetchedResults<ItemBP>
-    
-    //  @State private var showingAddView = false
+    // let fridgeItem = Bundle.main.decode([FridgeShelf].self, from: "Fridge.json")
     
     
     
     var body: some View {
         
-        VStack{}
-        
-        
-    }
-    
-    
-    
-    
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
+        VStack{
+            
         }
     }
+    
+    
 }
+        
+        struct ContentView_Previews: PreviewProvider {
+            static var previews: some View {
+                ContentView()
+            }
+        }
+    
+

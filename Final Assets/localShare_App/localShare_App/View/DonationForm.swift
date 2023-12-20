@@ -60,12 +60,6 @@ struct DonationForm: View {
                 
                 HStack{
                     Spacer()
-                    Button("submit"){
-                        
-                        //COREDATA
-                        DataController().addItem(itemName: itemName, vegan: vegan, nonFat: nonFat, halal: halal, glutenFree: glutenFree, expireDate: expireDate, context: managedObjectContext)
-                        dismiss()
-                    }
                     
                     Spacer()
                     
@@ -104,3 +98,7 @@ struct DonationForm_Previews: PreviewProvider {
         DonationForm()
     }
 }
+
+//references
+//https://www.youtube.com/watch?v=wZinqpiAEiA
+//https://www.youtube.com/watch?v=ffyJXfZCd4c

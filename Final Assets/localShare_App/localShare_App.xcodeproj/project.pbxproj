@@ -14,10 +14,14 @@
 		49C358EB2B224D760068AE29 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358EA2B224D760068AE29 /* ListsView.swift */; };
 		49C358ED2B282BD60068AE29 /* ItemModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358EC2B282BD60068AE29 /* ItemModel.swift */; };
 		49C358EF2B28FFA70068AE29 /* DonationForm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358EE2B28FFA70068AE29 /* DonationForm.swift */; };
-		49C358F52B2965D90068AE29 /* ItemBP.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49C358F32B2965D90068AE29 /* ItemBP.xcdatamodeld */; };
-		49C358F72B2967800068AE29 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358F62B2967800068AE29 /* DataController.swift */; };
 		49C358FB2B2B3D280068AE29 /* MapModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358FA2B2B3D280068AE29 /* MapModel.swift */; };
 		49C358FD2B2B3D670068AE29 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358FC2B2B3D670068AE29 /* MapView.swift */; };
+		49C358FF2B3001FC0068AE29 /* helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358FE2B3001FC0068AE29 /* helper.swift */; };
+		49C359012B3004890068AE29 /* Fridge.json in Resources */ = {isa = PBXBuildFile; fileRef = 49C359002B3004890068AE29 /* Fridge.json */; };
+		49C359052B302C5D0068AE29 /* FridgeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C359042B302C5D0068AE29 /* FridgeView.swift */; };
+		49C359072B3039D50068AE29 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C359062B3039D50068AE29 /* RowView.swift */; };
+		49C359092B31F97D0068AE29 /* formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C359082B31F97D0068AE29 /* formatting.swift */; };
+		49C3590B2B321CE10068AE29 /* DonationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3590A2B321CE10068AE29 /* DonationFormView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,10 +33,14 @@
 		49C358EA2B224D760068AE29 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
 		49C358EC2B282BD60068AE29 /* ItemModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemModel.swift; sourceTree = "<group>"; };
 		49C358EE2B28FFA70068AE29 /* DonationForm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationForm.swift; sourceTree = "<group>"; };
-		49C358F42B2965D90068AE29 /* ItemBP.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ItemBP.xcdatamodel; sourceTree = "<group>"; };
-		49C358F62B2967800068AE29 /* DataController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		49C358FA2B2B3D280068AE29 /* MapModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapModel.swift; sourceTree = "<group>"; };
 		49C358FC2B2B3D670068AE29 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		49C358FE2B3001FC0068AE29 /* helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helper.swift; sourceTree = "<group>"; };
+		49C359002B3004890068AE29 /* Fridge.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Fridge.json; sourceTree = "<group>"; };
+		49C359042B302C5D0068AE29 /* FridgeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FridgeView.swift; sourceTree = "<group>"; };
+		49C359062B3039D50068AE29 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
+		49C359082B31F97D0068AE29 /* formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatting.swift; sourceTree = "<group>"; };
+		49C3590A2B321CE10068AE29 /* DonationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +77,12 @@
 				49C358F92B298AEA0068AE29 /* DataModel */,
 				49C358EC2B282BD60068AE29 /* ItemModel.swift */,
 				49C358DE2B224BF30068AE29 /* ContentView.swift */,
+				49C359042B302C5D0068AE29 /* FridgeView.swift */,
+				49C3590A2B321CE10068AE29 /* DonationFormView.swift */,
+				49C359082B31F97D0068AE29 /* formatting.swift */,
+				49C359062B3039D50068AE29 /* RowView.swift */,
+				49C358FE2B3001FC0068AE29 /* helper.swift */,
+				49C359002B3004890068AE29 /* Fridge.json */,
 				49C358EA2B224D760068AE29 /* ListsView.swift */,
 				49C358E02B224BF30068AE29 /* Assets.xcassets */,
 				49C358E22B224BF30068AE29 /* Preview Content */,
@@ -96,8 +110,6 @@
 		49C358F92B298AEA0068AE29 /* DataModel */ = {
 			isa = PBXGroup;
 			children = (
-				49C358F62B2967800068AE29 /* DataController.swift */,
-				49C358F32B2965D90068AE29 /* ItemBP.xcdatamodeld */,
 				49C358FA2B2B3D280068AE29 /* MapModel.swift */,
 				49C358FC2B2B3D670068AE29 /* MapView.swift */,
 			);
@@ -164,6 +176,7 @@
 			files = (
 				49C358E42B224BF30068AE29 /* Preview Assets.xcassets in Resources */,
 				49C358E12B224BF30068AE29 /* Assets.xcassets in Resources */,
+				49C359012B3004890068AE29 /* Fridge.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,15 +187,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49C3590B2B321CE10068AE29 /* DonationFormView.swift in Sources */,
 				49C358FB2B2B3D280068AE29 /* MapModel.swift in Sources */,
-				49C358F72B2967800068AE29 /* DataController.swift in Sources */,
 				49C358DF2B224BF30068AE29 /* ContentView.swift in Sources */,
 				49C358EB2B224D760068AE29 /* ListsView.swift in Sources */,
-				49C358F52B2965D90068AE29 /* ItemBP.xcdatamodeld in Sources */,
 				49C358ED2B282BD60068AE29 /* ItemModel.swift in Sources */,
+				49C359072B3039D50068AE29 /* RowView.swift in Sources */,
+				49C359052B302C5D0068AE29 /* FridgeView.swift in Sources */,
 				49C358EF2B28FFA70068AE29 /* DonationForm.swift in Sources */,
 				49C358FD2B2B3D670068AE29 /* MapView.swift in Sources */,
 				49C358DD2B224BF30068AE29 /* localShare_AppApp.swift in Sources */,
+				49C359092B31F97D0068AE29 /* formatting.swift in Sources */,
+				49C358FF2B3001FC0068AE29 /* helper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -383,19 +399,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		49C358F32B2965D90068AE29 /* ItemBP.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				49C358F42B2965D90068AE29 /* ItemBP.xcdatamodel */,
-			);
-			currentVersion = 49C358F42B2965D90068AE29 /* ItemBP.xcdatamodel */;
-			path = ItemBP.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = 49C358D12B224BF20068AE29 /* Project object */;
 }

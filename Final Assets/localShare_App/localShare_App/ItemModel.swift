@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct Item: Identifiable, Codable {
+struct Item: Identifiable, Codable, Hashable {
     
     
     var id = UUID()
@@ -19,74 +19,41 @@ struct Item: Identifiable, Codable {
     var glutenFree: Bool
 
     var expireDate: Date
-    
+
     
 }
 
 
 
 
-class FridgeShelf
+class FridgeShelf: Codable, Identifiable, ObservableObject
 {
-
-    let itemCategory: String
-    @Published var itemsInShelf : [Item] = []
-
-    init(itemCategory: String, itemsInShelf: [Item]) {
-        self.itemCategory = itemCategory
-        self.itemsInShelf = itemsInShelf
-    }
-
-    {
-        didSet
-        {
-          saveItem()
-        }
-    }
-    let itemsKey: String = "items_shelf"
-
-
-
-    func getItems()
-    {
-        guard
-            let data = UserDefaults.standard.data(forKey: itemsKey),
-            let savedItems = try? JSONDecoder().decode([Item].self, from: data)
-          else{return}
-
-        self.itemsInShelf = savedItems
-    }
-
-
-    func removeItem(indexSet: IndexSet)
-    {
-        itemsInShelf.remove(atOffsets: indexSet)
-    }
-
-    func addItem(itemName: String, vegan: Bool,  nonFat: Bool,  halal: Bool,  glutenFree: Bool,  expireDate: Date)
-    {
-        let newItem = Item(itemName: itemName, vegan: vegan, nonFat: nonFat, halal: halal, glutenFree: glutenFree, expireDate: expireDate)
-
-        itemsInShelf.append(newItem)
-    }
-
-    func saveItem()
-    {
-        if let encodedData = try? JSONEncoder().encode(itemsInShelf)
-        {
-            UserDefaults.standard.set(encodedData, forKey: itemsKey)
-        }
-    }
-
-
-    }
-    
-
-
-    
-struct Fridge: Identifiable {
     var id = UUID()
+    var name: String
+    var shelfItems: [Item]
+    let thumbnailImage: String
+    
+    func addItemToShelf(newItem: Item)
+    {
+        shelfItems.append(newItem)
+    }
+    
+    init(id: UUID = UUID(), name: String, shelfItems: [Item], thumbnailImage: String) {
+        self.id = id
+        self.name = name
+        self.shelfItems = shelfItems
+        self.thumbnailImage = thumbnailImage
+    }
+    
+    
+}
+    
 
+
+    
+struct Fridge: Identifiable, Codable {
+    var id = UUID()
+    
     
     
     let plantBased: Bool
@@ -94,47 +61,21 @@ struct Fridge: Identifiable {
     let petFood: Bool
     let cookedFood: Bool
     
-    var Alerts: [Alert]
+    var shelvesInFridge: [FridgeShelf]
     
     
-    var fridgeShelves: [FridgeShelf] = [FridgeShelf(itemCategory: "Bread AND Carbs"), FridgeShelf(itemCategory: "Proteins"),FridgeShelf(itemCategory: "Dairy AND Alt"), FridgeShelf(itemCategory: "Fruits AND Vegetables")]
+    
 
 
 
-    mutating func addShelves(){
 
-        let isPetfood = petFood
-        let isCookedFood = cookedFood
-
-        if(isPetfood == true){
-            fridgeShelves.append(FridgeShelf(itemCategory: "Pet Food"))
-        }
-
-        if(isCookedFood == true){
-            fridgeShelves.append(FridgeShelf(itemCategory: "Cooked Food"))
-        }
-
-
-
-    mutating func addAlert(newAlert: Alert){
-
-        Alerts.append(newAlert)
-    }
     
 }
 
 
-struct Alert{
+
     
-    let alertMessage: String
-    
-    func ShowAlert(){
-        
-        Text("Alert: " + alertMessage)
-        
-    }
-    
-}
+
     
     
     

@@ -1,0 +1,99 @@
+
+{
+    "name": "OverThrowFridge"
+    "plantBased": true,
+    "nonFoodItems": false,
+    "petFood": false,
+    "cookedFood": true,
+    
+    "shelvesInFridge": [
+
+    
+       {
+       "name": "Proteins",
+       "ShelfItems":
+       [
+           {
+           "itemName": "Chobani Yogurt"
+           "vegan": true,
+           "nonFat": false,
+           "halal": false,
+           "glutenFree": false,
+
+           "expireDate": Date(),
+           "thumbnailImage": "Dairy"
+           
+           }
+           
+       ]
+       }
+       ,
+       {
+       "name": "DairyAndAlts",
+       "ShelfItems":
+       [
+           {
+           "itemName": "Chobani Yogurt"
+           "vegan": true,
+           "nonFat": false,
+           "halal": false,
+           "glutenFree": false,
+
+           "expireDate": Date(),
+           "thumbnailImage": "Dairy"
+           
+           }
+           
+       ]
+       }
+       
+       ,
+       {
+       "name": "breadAndCarbs",
+       "ShelfItems":
+       [
+           
+           {
+           "itemName": "Chobani Yogurt"
+           "vegan": true,
+           "nonFat": false,
+           "halal": false,
+           "glutenFree": false,
+
+           "expireDate": Date(),
+           "thumbnailImage": "Dairy"
+           
+           }
+           
+           
+           
+       ]
+       }
+       ,
+        {
+        "name": "fruitsAndVegetables",
+        "ShelfItems":
+        [
+            
+            {
+            "itemName": "Chobani Yogurt"
+            "vegan": true,
+            "nonFat": false,
+            "halal": false,
+            "glutenFree": false,
+
+            "expireDate": Date(),
+            "thumbnailImage": "Dairy"
+            
+            }
+            
+            
+        ]
+        }
+        
+    
+    
+    ]
+    
+    }
+
