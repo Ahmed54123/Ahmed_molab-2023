@@ -12,7 +12,7 @@ struct localShare_AppApp: App {
     
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            FridgeView()
                 
         }
     }

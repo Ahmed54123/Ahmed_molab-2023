@@ -11,10 +11,12 @@ import SwiftUI
 
 var sampleItem = Item(itemName: "Chobani Yogurt", vegan: false, nonFat: false, halal: true, glutenFree: true, expireDate: formatDate().formatDateIntoDate(givenDate: ("09/02/2026")))
 
+var sampleBreadItem = Item(itemName: "Rye Bread", vegan: true, nonFat: true, halal: true, glutenFree: false, expireDate: formatDate().formatDateIntoDate(givenDate: (("18/12/2023"))))
+
 
 //Shelves
 var sampleProteinShelf = FridgeShelf(name: "Protein", shelfItems: [], thumbnailImage: "Meat")
-var sampleCarbsShelf = FridgeShelf(name: "Carbs", shelfItems: [], thumbnailImage: "Bread")
+var sampleCarbsShelf = FridgeShelf(name: "Carbs", shelfItems: [sampleBreadItem], thumbnailImage: "Bread")
 var sampleDairyShelf = FridgeShelf(name: "Dairy", shelfItems: [sampleItem,sampleItem], thumbnailImage: "Dairy")
 var sampleFruitsShelf = FridgeShelf(name: "Fruits and Vegetables", shelfItems: [], thumbnailImage: "VegetablesFruits")
 

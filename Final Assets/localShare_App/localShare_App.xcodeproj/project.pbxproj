@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		49C358DD2B224BF30068AE29 /* localShare_AppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358DC2B224BF30068AE29 /* localShare_AppApp.swift */; };
-		49C358DF2B224BF30068AE29 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358DE2B224BF30068AE29 /* ContentView.swift */; };
 		49C358E12B224BF30068AE29 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C358E02B224BF30068AE29 /* Assets.xcassets */; };
 		49C358E42B224BF30068AE29 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49C358E32B224BF30068AE29 /* Preview Assets.xcassets */; };
 		49C358EB2B224D760068AE29 /* ListsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C358EA2B224D760068AE29 /* ListsView.swift */; };
@@ -22,12 +21,12 @@
 		49C359072B3039D50068AE29 /* RowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C359062B3039D50068AE29 /* RowView.swift */; };
 		49C359092B31F97D0068AE29 /* formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C359082B31F97D0068AE29 /* formatting.swift */; };
 		49C3590B2B321CE10068AE29 /* DonationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3590A2B321CE10068AE29 /* DonationFormView.swift */; };
+		49C3590D2B332B2F0068AE29 /* ItemInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C3590C2B332B2F0068AE29 /* ItemInfoView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		49C358D92B224BF30068AE29 /* localShare_App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = localShare_App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		49C358DC2B224BF30068AE29 /* localShare_AppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = localShare_AppApp.swift; sourceTree = "<group>"; };
-		49C358DE2B224BF30068AE29 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		49C358E02B224BF30068AE29 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		49C358E32B224BF30068AE29 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		49C358EA2B224D760068AE29 /* ListsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListsView.swift; sourceTree = "<group>"; };
@@ -41,6 +40,7 @@
 		49C359062B3039D50068AE29 /* RowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RowView.swift; sourceTree = "<group>"; };
 		49C359082B31F97D0068AE29 /* formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = formatting.swift; sourceTree = "<group>"; };
 		49C3590A2B321CE10068AE29 /* DonationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DonationFormView.swift; sourceTree = "<group>"; };
+		49C3590C2B332B2F0068AE29 /* ItemInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemInfoView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,16 +73,11 @@
 		49C358DB2B224BF30068AE29 /* localShare_App */ = {
 			isa = PBXGroup;
 			children = (
-				49C358F82B2986A80068AE29 /* View */,
+				49C359102B33C7A40068AE29 /* ViewModels */,
+				49C3590F2B33C77B0068AE29 /* MainViews */,
+				49C358F82B2986A80068AE29 /* depracated */,
 				49C358F92B298AEA0068AE29 /* DataModel */,
-				49C358EC2B282BD60068AE29 /* ItemModel.swift */,
-				49C358DE2B224BF30068AE29 /* ContentView.swift */,
-				49C359042B302C5D0068AE29 /* FridgeView.swift */,
-				49C3590A2B321CE10068AE29 /* DonationFormView.swift */,
-				49C359082B31F97D0068AE29 /* formatting.swift */,
-				49C359062B3039D50068AE29 /* RowView.swift */,
-				49C358FE2B3001FC0068AE29 /* helper.swift */,
-				49C359002B3004890068AE29 /* Fridge.json */,
+				49C3590E2B33C7550068AE29 /* JSON */,
 				49C358EA2B224D760068AE29 /* ListsView.swift */,
 				49C358E02B224BF30068AE29 /* Assets.xcassets */,
 				49C358E22B224BF30068AE29 /* Preview Content */,
@@ -98,13 +93,13 @@
 			path = "Preview Content";
 			sourceTree = "<group>";
 		};
-		49C358F82B2986A80068AE29 /* View */ = {
+		49C358F82B2986A80068AE29 /* depracated */ = {
 			isa = PBXGroup;
 			children = (
 				49C358EE2B28FFA70068AE29 /* DonationForm.swift */,
 				49C358DC2B224BF30068AE29 /* localShare_AppApp.swift */,
 			);
-			path = View;
+			path = depracated;
 			sourceTree = "<group>";
 		};
 		49C358F92B298AEA0068AE29 /* DataModel */ = {
@@ -114,6 +109,35 @@
 				49C358FC2B2B3D670068AE29 /* MapView.swift */,
 			);
 			path = DataModel;
+			sourceTree = "<group>";
+		};
+		49C3590E2B33C7550068AE29 /* JSON */ = {
+			isa = PBXGroup;
+			children = (
+				49C358FE2B3001FC0068AE29 /* helper.swift */,
+				49C359002B3004890068AE29 /* Fridge.json */,
+			);
+			path = JSON;
+			sourceTree = "<group>";
+		};
+		49C3590F2B33C77B0068AE29 /* MainViews */ = {
+			isa = PBXGroup;
+			children = (
+				49C359042B302C5D0068AE29 /* FridgeView.swift */,
+				49C3590C2B332B2F0068AE29 /* ItemInfoView.swift */,
+				49C3590A2B321CE10068AE29 /* DonationFormView.swift */,
+			);
+			path = MainViews;
+			sourceTree = "<group>";
+		};
+		49C359102B33C7A40068AE29 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				49C358EC2B282BD60068AE29 /* ItemModel.swift */,
+				49C359082B31F97D0068AE29 /* formatting.swift */,
+				49C359062B3039D50068AE29 /* RowView.swift */,
+			);
+			path = ViewModels;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -189,13 +213,13 @@
 			files = (
 				49C3590B2B321CE10068AE29 /* DonationFormView.swift in Sources */,
 				49C358FB2B2B3D280068AE29 /* MapModel.swift in Sources */,
-				49C358DF2B224BF30068AE29 /* ContentView.swift in Sources */,
 				49C358EB2B224D760068AE29 /* ListsView.swift in Sources */,
 				49C358ED2B282BD60068AE29 /* ItemModel.swift in Sources */,
 				49C359072B3039D50068AE29 /* RowView.swift in Sources */,
 				49C359052B302C5D0068AE29 /* FridgeView.swift in Sources */,
 				49C358EF2B28FFA70068AE29 /* DonationForm.swift in Sources */,
 				49C358FD2B2B3D670068AE29 /* MapView.swift in Sources */,
+				49C3590D2B332B2F0068AE29 /* ItemInfoView.swift in Sources */,
 				49C358DD2B224BF30068AE29 /* localShare_AppApp.swift in Sources */,
 				49C359092B31F97D0068AE29 /* formatting.swift in Sources */,
 				49C358FF2B3001FC0068AE29 /* helper.swift in Sources */,

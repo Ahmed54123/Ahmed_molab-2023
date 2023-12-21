@@ -14,9 +14,9 @@ struct itemRow: View {
     var body: some View {
                 
         HStack{
-            Button{
-                
-            } label: {
+            
+            NavigationLink{ ItemInfoView(itemToInfo: item) }
+             label: {
                 Image(systemName: "info.circle")
                     .foregroundColor(Color("textColor"))
             }
@@ -60,12 +60,10 @@ struct shelfRow: View
                 .resizable()
                 .frame(width: 200, height: 200.0)
             
-            Button{
-                
-                
-            }
+            NavigationLink{DonationFormView(shelfReference: shelf, thumbnailImage: shelfImageName)}
         label: {Image(systemName: "plus.app").scaleEffect(x: 3, y:3)}                .frame(maxWidth: .infinity, alignment: .trailing)
-                .padding(30)
+                   .padding(30)
+                   .foregroundColor(Color("bkColor"))
 
             
         }
@@ -82,3 +80,5 @@ struct RowView_Previews: PreviewProvider {
         itemRow(item: sampleItem)
     }
 }
+
+//ref: https://ix76y.medium.com/how-to-navigate-between-views-a8b15a4f49ec#:~:text=Navigation%20in%20SwiftUI%20is%20very,want%20to%20navigate%20away%20from.

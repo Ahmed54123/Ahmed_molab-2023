@@ -54,6 +54,38 @@ struct buttonCheckboxStyle: ToggleStyle
         
         
     }
+
+struct closeButton: View{
+    @Environment(\.dismiss) private var dismiss
+    
+    var body: some View
+    
+    
+    {
+        
+        VStack{
+            
+            Button{ dismiss.callAsFunction() }
+            
+        label:{
+            
+            Image(systemName: "xmark.circle")
+                .font(.system(size: 16, weight: .bold))
+                .foregroundColor(.white)
+                .padding(.all, 5)
+                .background(Color.red.opacity(1.0))
+                .clipShape(Circle())
+                .accessibility(label: Text("Close"))
+                .accessibility(hint: Text("Tap to close the screen"))
+                .accessibility(addTraits: .isButton)
+                .accessibility(removeTraits: .isImage)
+        }
+        }
+            
+        
+    }
+    
+}
     
     
 
